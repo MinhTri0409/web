@@ -1,0 +1,165 @@
+{
+  "planHash": "7d6747bc4e20edd3bc667a299740c60f56a3c9352e1533db6d603c19c999da65",
+  "phase": "standalone",
+  "recordedAtUtc": "2026-10-29T14:40:19.2392775Z",
+  "retryCount": 1,
+  "resetBaseline": false,
+  "complete": true,
+  "result": {
+    "setupSucceeded": true,
+    "setupDurationMs": 72380,
+    "setupFailureOutput": null,
+    "assertions": [
+      {
+        "name": "frontend-lint",
+        "kind": "process",
+        "verificationMethod": "exit-code",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "\r\n\u003E web@0.1.0 lint\r\n\u003E eslint --ignore-pattern .tsupgrader/**\r\n\r\n",
+        "durationMs": 14673
+      },
+      {
+        "name": "frontend-build",
+        "kind": "process",
+        "verificationMethod": "exit-code",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "\r\n\u003E web@0.1.0 build\r\n\u003E next build\r\n\r\n\u25B2 Next.js 16.4.3 (Turbopack)\r\n\u2713 Running next.config.ts took 69ms\r\n\r\n  Creating an optimized production build ...\r\n\u2713 Compiled successfully in 2.4s\r\n  Running TypeScript ...\r\n  Finished TypeScript in 4.9s ...\r\n  Collecting page data using 11 workers ...\r\n  Generating static pages using 11 workers (0/8) ...\r\n  Generating static pages using 11 workers (2/8) \r\n  Generating static pages using 11 workers (4/8) \r\n  Generating static pages using 11 workers (6/8) \r\n\u2713 Generating static pages using 11 workers (8/8) in 418ms\r\n  Finalizing page optimization ...\r\n\r\nRoute (app)\r\n\u250C \u0192 /\r\n\u251C \u25CB /_not-found\r\n\u251C \u0192 /[...segments]\r\n\u251C \u0192 /api/auth/csrf\r\n\u251C \u0192 /api/auth/login\r\n\u251C \u0192 /api/auth/logout\r\n\u251C \u0192 /api/auth/session\r\n\u251C \u0192 /api/backend/[...path]\r\n\u251C \u0192 /dashboard\r\n\u2514 \u25CB /login\r\n\r\n\r\n\u25CB  (Static)   prerendered as static content\r\n\u0192  (Dynamic)  server-rendered on demand\r\n\r\n",
+        "durationMs": 14003
+      },
+      {
+        "name": "tests-pass",
+        "kind": "process",
+        "verificationMethod": "test-results",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "\r\n\u003E web@0.1.0 test\r\n\u003E node --experimental-strip-types --test src/app/api/auth/auth-contract.test.ts src/lib/license-plate.test.ts src/lib/parking-layout.test.ts\r\n\r\n(node:24344) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///D:/parking-management/web/src/app/api/auth/auth-contract.test.ts is not specified and it doesn\u0027t parse as CommonJS.\r\nReparsing as ES module because module syntax was detected. This incurs a performance overhead.\r\nTo eliminate this warning, add \u0022type\u0022: \u0022module\u0022 to D:\\parking-management\\web\\package.json.\r\n(Use \u0060node --trace-warnings ...\u0060 to show where the warning was created)\r\n\u2714 parses a valid JSON login request (3.8025ms)\r\n\u2714 rejects missing and wrong-type login fields (0.3284ms)\r\n\u2714 accepts only Spring canonical redirect destinations (0.6411ms)\r\n(node:18696) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///D:/parking-management/web/src/lib/license-plate.test.ts is not specified and it doesn\u0027t parse as CommonJS.\r\nReparsing as ES module because module syntax was detected. This incurs a performance overhead.\r\nTo eliminate this warning, add \u0022type\u0022: \u0022module\u0022 to D:\\parking-management\\web\\package.json.\r\n(Use \u0060node --trace-warnings ...\u0060 to show where the warning was created)\r\n\u2714 formats a standard Vietnamese plate read from OCR (2.1072ms)\r\n\u2714 ignores OCR whitespace and punctuation around plate characters (0.5075ms)\r\n\u2714 corrects common OCR letter/digit confusion in numeric sections (0.2718ms)\r\n\u2714 rejects text that does not resemble a Vietnamese vehicle plate (0.2358ms)\r\n(node:31380) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///D:/parking-management/web/src/lib/parking-layout.test.ts is not specified and it doesn\u0027t parse as CommonJS.\r\nReparsing as ES module because module syntax was detected. This incurs a performance overhead.\r\nTo eliminate this warning, add \u0022type\u0022: \u0022module\u0022 to D:\\parking-management\\web\\package.json.\r\n(Use \u0060node --trace-warnings ...\u0060 to show where the warning was created)\r\n\u2714 groups forty backend slots into four ten-slot parking zones (4.6063ms)\r\n\u2714 maps backend slot IDs to stable customer-facing labels (0.6258ms)\r\n\u2714 retains a readable fallback for slot IDs without a numeric suffix (0.2816ms)\r\n\u2139 tests 10\r\n\u2139 suites 0\r\n\u2139 pass 10\r\n\u2139 fail 0\r\n\u2139 cancelled 0\r\n\u2139 skipped 0\r\n\u2139 todo 0\r\n\u2139 duration_ms 216.9178\r\n",
+        "durationMs": 1048,
+        "testResults": {
+          "testFramework": "unknown",
+          "runnerDetectedFrom": "none",
+          "testsTotal": 0,
+          "testsPassed": 0,
+          "testsFailed": 0,
+          "testsSkipped": 0,
+          "parseFailed": true
+        }
+      },
+      {
+        "name": "home-page-responds",
+        "kind": "http-probe",
+        "verificationMethod": "http-status",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": null,
+        "outputSample": "HTTP 200\n\u003C!DOCTYPE html\u003E\u003Chtml lang=\u0022vi\u0022 class=\u0022T19VSG_variable _8Li5zG_variable h-full antialiased\u0022\u003E\u003Chead\u003E\u003Cmeta charSet=\u0022utf-8\u0022/\u003E\u003Cmeta name=\u0022viewport\u0022 content=\u0022width=device-width, initial-scale=1\u0022/\u003E\u003Clink rel=\u0022stylesheet\u0022 href=\u0022/_next/static/chunks/3k-0z58c7ejp3.css\u0022 data-precedence=\u0022next\u0022/\u003E\u003Clink rel=\u0022stylesheet\u0022 href=\u0022/_next/static/chunks/3-3ud9gzu2zo-.css\u0022 data-precedence=\u0022next\u0022/\u003E\u003Clink rel=\u0022preload\u0022 as=\u0022script\u0022 fetchPriority=\u0022low\u0022 href=\u0022/_next/static/chunks/1ckvzn7sfprko.js\u0022/\u003E\u003Cscript src=\u0022/_next/static/chunks/2r4s4h5xul1n-.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/216iyidhmrh3u.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/2e268anpfvdoc.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/turbopack-3-ry682tkyiqk.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/0umf92h1sb77c.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/0jpesfau4tys7.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/0idcar6st1j5w.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Ctitle\u003ENh\u00E0 xe Hi\u1EBFu Minh\u003C/title\u003E\u003Cmeta name=\u0022description\u0022 content=\u0022H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD v\u00E0 \u0111\u1EB7t ch\u1ED7 g\u1EEDi xe\u0022/\u003E\u003Clink rel=\u0022icon\u0022 href=\u0022/favicon.ico?favicon.117ezoe8m31dk.ico\u0022 sizes=\u002248x48\u0022 type=\u0022image/x-icon\u0022/\u003E\u003Cmeta name=\u0022next-size-adjust\u0022 content=\u0022\u0022/\u003E\u003Cscript src=\u0022/_next/static/chunks/0cz1d0mv5g_q7.js\u0022 noModule=\u0022\u0022\u003E\u003C/script\u003E\u003C/head\u003E\u003Cbody class=\u0022min-h-full flex flex-col\u0022\u003E\u003Cdiv hidden=\u0022\u0022\u003E\u003C!--$--\u003E\u003C!--/$--\u003E\u003C/div\u003E\u003Cdiv class=\u0022landing-page\u0022\u003E\u003Cheader class=\u0022landing-header\u0022\u003E\u003Cnav class=\u0022landing-nav\u0022 aria-label=\u0022\u0110i\u1EC1u h\u01B0\u1EDBng ch\u00EDnh\u0022\u003E\u003Ca class=\u0022landing-brand\u0022 aria-label=\u0022Nh\u00E0 xe Hi\u1EBFu Minh - Trang ch\u1EE7\u0022 href=\u0022/\u0022\u003E\u003Cspan class=\u0022landing-brand-mark\u0022\u003EP\u003C/span\u003E\u003Cspan\u003ENH\u00C0 XE \u003Cstrong\u003EHI\u1EBEU MINH\u003C/strong\u003E\u003C/span\u003E\u003C/a\u003E\u003Cdiv class=\u0022landing-nav-links\u0022\u003E\u003Ca href=\u0022#gioi-thieu\u0022\u003EGi\u1EDBi thi\u1EC7u\u003C/a\u003E\u003Ca href=\u0022#dich-vu\u0022\u003ED\u1ECBch v\u1EE5\u003C/a\u003E\u003Ca href=\u0022#quy-trinh\u0022\u003EC\u00E1ch \u0111\u1EB7t ch\u1ED7\u003C/a\u003E\u003Ca href=\u0022#bang-gia\u0022\u003EB\u1EA3ng gi\u00E1\u003C/a\u003E\u003Ca href=\u0022#lien-he\u0022\u003ELi\u00EAn h\u1EC7\u003C/a\u003E\u003C/div\u003E\u003Cdiv class=\u0022landing-nav-actions\u0022\u003E\u003Ca class=\u0022landing-login\u0022 href=\u0022/login\u0022\u003E\u0110\u0103ng nh\u1EADp\u003C/a\u003E\u003C/div\u003E\u003C/nav\u003E\u003C/header\u003E\u003Cmain\u003E\u003Csection class=\u0022landing-hero\u0022\u003E\u003Cspan class=\u0022hero-glow hero-glow-one\u0022\u003E\u003C/span\u003E\u003Cspan class=\u0022hero-glow hero-glow-two\u0022\u003E\u003C/span\u003E\u003Cdiv class=\u0022landing-hero-inner\u0022\u003E\u003Cdiv class=\u0022landing-hero-copy\u0022\u003E\u003Cspan class=\u0022landing-eyebrow\u0022\u003E\u003Ci\u003E\u003C/i\u003E TR\u1EA2I NGHI\u1EC6M G\u1EECI XE CH\u1EE6 \u0110\u1ED8NG\u003C/span\u003E\u003Ch1\u003E\u0110\u1EBFn n\u01A1i an t\u00E2m.\u003Cbr/\u003E\u003Cspan\u003E\u0110\u00E3 c\u00F3 ch\u1ED7 \u0111\u1EE3i b\u1EA1n.\u003C/span\u003E\u003C/h1\u003E\u003Cp\u003ECh\u1ECDn lo\u1EA1i xe, gi\u1EDD g\u1EEDi v\u00E0 v\u1ECB tr\u00ED \u0111\u1ED7 tr\u01B0\u1EDBc khi kh\u1EDFi h\u00E0nh. Theo d\u00F5i x\u00E1c nh\u1EADn \u0111\u1EB7t ch\u1ED7 ngay tr\u00EAn t\u00E0i kho\u1EA3n c\u1EE7a b\u1EA1n.\u003C/p\u003E\u003Cdiv class=\u0022landing-hero-actions\u0022\u003E\u003Ca class=\u0022landing-cta\u0022 href=\u0022/reservations\u0022\u003E\u0110\u1EB7t ch\u1ED7 tr\u1EF1c tuy\u1EBFn \u003Cspan aria-hidden=\u0022true\u0022\u003E\u2192\u003C/span\u003E\u003C/a\u003E\u003Ca class=\u0022landing-text-link\u0022 href=\u0022#quy-trinh\u0022\u003E\u003Cspan class=\u0022play-icon\u0022\u003E\u25B6\u003C/span\u003E T\u00ECm hi\u1EC3u c\u00E1ch \u0111\u1EB7t\u003C/a\u003E\u003C/div\u003E\u003Cdiv class=\u0022landing-trust-row\u0022\u003E\u003Cspan\u003E\u003Ci\u003E\u2713\u003C/i\u003E Ch\u1ECDn ch\u1ED7 tr\u01B0\u1EDBc\u003C/span\u003E\u003Cspan\u003E\u003Ci\u003E\u2713\u003C/i\u003E Gi\u00E1 r\u00F5 r\u00E0ng\u003C/span\u003E\u003Cspan\u003E\u003Ci\u003E\u2713\u003C/i\u003E X\u00E1c nh\u1EADn minh b\u1EA1ch\u003C/span\u003E\u003C/div\u003E\u003C/div\u003E\u003Csection class=\u0022landing-visual\u0022 aria-label=\u0022S\u01A1 \u0111\u1ED3 v\u1ECB tr\u00ED \u0111\u1ED7 xe hi\u1EC7n t\u1EA1i\u0022\u003E\u003Cdiv class=\u0022visual-topline\u0022\u003E\u003Cspan\u003E\u003Ci class=\u0022status-dot\u0022\u003E\u003C/i\u003E S\u01A0 \u0110\u1ED2 B\u00C3I XE HI\u1EBEU MINH\u003C/span\u003E\u003Cspan\u003ETR\u1EA0NG TH\u00C1I HI\u1EC6N T\u1EA0I\u003C/span\u003E\u003C/div\u003E\u003Cdiv class=\u0022parking-map-legend\u0022 aria-label=\u0022Ch\u00FA gi\u1EA3i tr\u1EA1ng th\u00E1i\u0022\u003E\u003Cspan\u003E\u003Ci class=\u0022map-state-available\u0022\u003E\u003C/i\u003E C\u00F2n tr\u1ED1ng\u003C/span\u003E\u003Cspan\u003E\u003Ci class=\u0022map-state-occupied\u0022\u003E\u003C/i\u003E \u0110ang c\u00F3 xe\u003C/span\u003E\u003Cspan\u003E\u003Ci class=\u0022map-state-reserved\u0022\u003E\u003C/i\u003E \u0110\u00E3 \u0111\u1EB7t ch\u1ED7\u003C/span\u003E\u003C/div\u003E\u003Cdiv class=\u0022parking-map-sections\u0022\u003E\u003Csection class=\u0022parking-map-section\u0022 aria-label=\u0022Khu v\u1EF1c Xe m\u00E1y\u0022\u003E\u003Cheader class=\u0022parking-map-section-heading\u0022\u003E\u003Cspan class=\u0022parking-map-type-icon parking-map-type-motorbike\u0022 aria-hidden=\u0022true\u0022\u003E\u25C9\u003C/span\u003E\u003Cstrong\u003EXe m\u00E1y\u003C/strong\u003E\u003Cspan\u003E40\u003C!-- --\u003E / \u003C!-- --\u003E40\u003C!-- --\u003E tr\u1ED1ng\u003C/span\u003E\u003C/header\u003E\u003Cdiv class=\u0022parking-zone-grid\u0022\u003E\u003Csection class=\u0022parking-zone parking-zone-0\u0022\u003E\u003Cheader class=\u0022parking-zone-heading\u0022\u003E\u003Cstrong\u003EKhu A\u003C/strong\u003E\u003Csmall\u003EG\u00F3c tr\u00EAn b\u00EAn tr\u00E1i\u003C/small\u003E\u003C/header\u003E\u003Cdiv class=\u0022parking-map-grid\u0022\u003E\u003Cdiv class=\u0022parking-map-slot parking-map-slot-available\u0022 title=\u0022Khu A \u00B7 A1 (MOTORBIKE-001): C\u00F2n tr\u1ED1ng\u0022\u003E\u003Cspan class=\u0022parking-map-slot-icon\u0022 aria-hidden=\u0022true\u0022\u003E\u25C9\u003C/span\u003E\u003Cstrong\u003EA1\u003C/strong\u003E\u003Csmall\u003ETR\u1ED0NG\u003C/small\u003E\u003Cspan class=\u0022parking-map-slot-id\u0022\u003EMOTORBIKE-001\u003C/span\u003E\u003C/div\u003E\u003Cdiv class=\u0022parking-map-slot parking-map-slot-available\u0022 title=\u0022K\n\u2026[truncated]",
+        "durationMs": 1539
+      },
+      {
+        "name": "admin-revenue-report-route-responds",
+        "kind": "http-probe",
+        "verificationMethod": "http-status",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": null,
+        "outputSample": "HTTP 200\n\u003C!DOCTYPE html\u003E\u003Chtml lang=\u0022vi\u0022 class=\u0022T19VSG_variable _8Li5zG_variable h-full antialiased\u0022\u003E\u003Chead\u003E\u003Cmeta charSet=\u0022utf-8\u0022/\u003E\u003Cmeta name=\u0022viewport\u0022 content=\u0022width=device-width, initial-scale=1\u0022/\u003E\u003Clink rel=\u0022stylesheet\u0022 href=\u0022/_next/static/chunks/3k-0z58c7ejp3.css\u0022 data-precedence=\u0022next\u0022/\u003E\u003Clink rel=\u0022preload\u0022 as=\u0022script\u0022 fetchPriority=\u0022low\u0022 href=\u0022/_next/static/chunks/1ckvzn7sfprko.js\u0022/\u003E\u003Cscript src=\u0022/_next/static/chunks/2r4s4h5xul1n-.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/216iyidhmrh3u.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/2e268anpfvdoc.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/turbopack-3-ry682tkyiqk.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/0umf92h1sb77c.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/2dh6b4l51j0ke.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/3vijyrirtjimz.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/0idcar6st1j5w.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Ctitle\u003ENh\u00E0 xe Hi\u1EBFu Minh\u003C/title\u003E\u003Cmeta name=\u0022description\u0022 content=\u0022H\u1EC7 th\u1ED1ng qu\u1EA3n l\u00FD v\u00E0 \u0111\u1EB7t ch\u1ED7 g\u1EEDi xe\u0022/\u003E\u003Clink rel=\u0022icon\u0022 href=\u0022/favicon.ico?favicon.117ezoe8m31dk.ico\u0022 sizes=\u002248x48\u0022 type=\u0022image/x-icon\u0022/\u003E\u003Cmeta name=\u0022next-size-adjust\u0022 content=\u0022\u0022/\u003E\u003Cscript src=\u0022/_next/static/chunks/0cz1d0mv5g_q7.js\u0022 noModule=\u0022\u0022\u003E\u003C/script\u003E\u003C/head\u003E\u003Cbody class=\u0022min-h-full flex flex-col\u0022\u003E\u003Cdiv hidden=\u0022\u0022\u003E\u003C!--$--\u003E\u003C!--/$--\u003E\u003C/div\u003E\u003Cdiv class=\u0022app-frame admin-frame\u0022\u003E\u003Cheader class=\u0022app-header\u0022\u003E\u003Ca class=\u0022brand\u0022 href=\u0022/\u0022\u003E\u003Cspan class=\u0022brand-mark\u0022\u003EP\u003C/span\u003E\u003Cspan\u003ENH\u00C0 XE \u003Cstrong\u003EHI\u1EBEU MINH\u003C/strong\u003E\u003C/span\u003E\u003C/a\u003E\u003Cnav aria-label=\u0022\u0110i\u1EC1u h\u01B0\u1EDBng ch\u00EDnh\u0022\u003E\u003Ca href=\u0022/contact\u0022\u003ELi\u00EAn h\u1EC7\u003C/a\u003E\u003Ca href=\u0022/register\u0022\u003E\u0110\u0103ng k\u00FD\u003C/a\u003E\u003Ca href=\u0022/login\u0022\u003E\u0110\u0103ng nh\u1EADp\u003C/a\u003E\u003C/nav\u003E\u003C/header\u003E\u003Cmain class=\u0022workspace admin-workspace\u0022\u003E\u003Cdiv class=\u0022workspace-heading\u0022\u003E\u003Cdiv\u003E\u003Cspan class=\u0022eyebrow\u0022\u003E\u0110I\u1EC0U H\u00C0NH B\u00C3I XE\u003C/span\u003E\u003Cp\u003EQu\u1EA3n l\u00FD v\u00E0 \u0111\u1EB7t ch\u1ED7 g\u1EEDi xe tr\u1EF1c tuy\u1EBFn\u003C/p\u003E\u003C/div\u003E\u003C/div\u003E\u003Cdiv class=\u0022revenue-report-page\u0022\u003E\u003Cheader class=\u0022revenue-report-heading\u0022\u003E\u003Cdiv\u003E\u003Cspan class=\u0022revenue-report-eyebrow\u0022\u003ETRUNG T\u00C2M PH\u00C2N T\u00CDCH\u003C/span\u003E\u003Ch2\u003EB\u00E1o c\u00E1o doanh thu\u003C/h2\u003E\u003Cp\u003ETheo d\u00F5i doanh thu, l\u01B0\u1EE3t xe v\u00E0 c\u00E1c ngu\u1ED3n thu trong kho\u1EA3ng th\u1EDDi gian \u0111\u00E3 ch\u1ECDn.\u003C/p\u003E\u003C/div\u003E\u003Ca class=\u0022revenue-export-button\u0022 href=\u0022/api/backend/admin/reports/export?from=2026-10-01\u0026amp;to=2026-10-29\u0022\u003E\u2193 \u003Cspan\u003EXu\u1EA5t b\u00E1o c\u00E1o CSV\u003C/span\u003E\u003C/a\u003E\u003C/header\u003E\u003Cform class=\u0022revenue-filter-panel\u0022\u003E\u003Cdiv class=\u0022revenue-filter-title\u0022\u003E\u003Cspan class=\u0022revenue-filter-icon\u0022\u003E\u25A6\u003C/span\u003E\u003Cdiv\u003E\u003Cstrong\u003EKho\u1EA3ng th\u1EDDi gian\u003C/strong\u003E\u003Csmall\u003ECh\u1ECDn ng\u00E0y \u0111\u1EC3 c\u1EADp nh\u1EADt b\u00E1o c\u00E1o\u003C/small\u003E\u003C/div\u003E\u003C/div\u003E\u003Clabel class=\u0022revenue-date-field\u0022\u003E\u003Cspan\u003ET\u1EEB ng\u00E0y\u003C/span\u003E\u003Cinput type=\u0022date\u0022 max=\u00222026-10-29\u0022 required=\u0022\u0022 value=\u00222026-10-01\u0022/\u003E\u003C/label\u003E\u003Cspan class=\u0022revenue-date-separator\u0022 aria-hidden=\u0022true\u0022\u003E\u2192\u003C/span\u003E\u003Clabel class=\u0022revenue-date-field\u0022\u003E\u003Cspan\u003E\u0110\u1EBFn ng\u00E0y\u003C/span\u003E\u003Cinput type=\u0022date\u0022 min=\u00222026-10-01\u0022 max=\u00222026-10-29\u0022 required=\u0022\u0022 value=\u00222026-10-29\u0022/\u003E\u003C/label\u003E\u003Cbutton class=\u0022revenue-apply-button\u0022\u003E\u2315 C\u1EADp nh\u1EADt\u003C/button\u003E\u003Cdiv class=\u0022revenue-presets\u0022 aria-label=\u0022Kho\u1EA3ng th\u1EDDi gian nhanh\u0022\u003E\u003Cbutton type=\u0022button\u0022\u003EH\u00F4m nay\u003C/button\u003E\u003Cbutton type=\u0022button\u0022\u003E7 ng\u00E0y\u003C/button\u003E\u003Cbutton type=\u0022button\u0022\u003E30 ng\u00E0y\u003C/button\u003E\u003Cbutton type=\u0022button\u0022\u003ETh\u00E1ng n\u00E0y\u003C/button\u003E\u003C/div\u003E\u003C/form\u003E\u003Csection class=\u0022revenue-kpis\u0022 aria-label=\u0022T\u1ED5ng quan doanh thu\u0022\u003E\u003Carticle class=\u0022revenue-kpi revenue-kpi-total\u0022\u003E\u003Cspan class=\u0022revenue-kpi-icon\u0022\u003E\u20AB\u003C/span\u003E\u003Cspan class=\u0022revenue-kpi-label\u0022\u003ET\u1ED4NG DOANH THU\u003C/span\u003E\u003Cstrong\u003E0 \u0111\u003C!-- --\u003E \u003Csmall\u003E\u0111\u003C/small\u003E\u003C/strong\u003E\u003Cp\u003ETrong kho\u1EA3ng th\u1EDDi gian \u0111\u00E3 ch\u1ECDn\u003C/p\u003E\u003C/article\u003E\u003Carticle class=\u0022revenue-kpi\u0022\u003E\u003Cspan class=\u0022revenue-kpi-icon revenue-icon-turn\u0022\u003E\u25B0\u003C/span\u003E\u003Cspan class=\u0022revenue-kpi-label\u0022\u003EDOANH THU V\u00C9 L\u01AF\u1EE2T\u003C/span\u003E\u003Cstrong\u003E0 \u0111\u003C!-- --\u003E \u003Csmall\u003E\u0111\u003C/small\u003E\u003C/strong\u003E\u003Cp\u003EPh\u00ED g\u1EEDi xe theo l\u01B0\u1EE3t\u003C/p\u003E\u003C/article\u003E\u003Carticle class=\u0022revenue-kpi\u0022\u003E\u003Cspan class=\u0022revenue-kpi-icon revenue-icon-online\u0022\u003E\u2197\u003C/span\u003E\u003Cspan class=\u0022revenue-kpi-label\u0022\u003E\u0110\u1EB6T CH\u1ED6 TR\u1EF0C TUY\u1EBEN\u003C/span\u003E\u003Cstrong\u003E0 \u0111\u003C!-- --\u003E \u003Csmall\u003E\u0111\u003C/small\u003E\u003C/strong\u003E\u003Cp\u003E0\u003C!-- --\u003E \u0111\u01A1n \u0111\u00E3 thanh to\u00E1n\u003C/p\u003E\u003C/article\u003E\u003Carticle class=\u0022revenue-kpi\u0022\u003E\u003Cspan class=\u0022revenue-kpi-icon revenue-icon-monthly\u0022\u003E\u25A4\u003C/span\u003E\u003Cspan class=\u0022revenue-kpi-label\u0022\u003EDOANH THU V\u00C9 TH\u00C1NG\u003C/span\u003E\u003Cstrong\u003E0 \u0111\u003C!-- --\u003E \u003Csmall\u003E\u0111\u003C/small\u003E\u003C/strong\u003E\u003Cp\u003EV\u00E9 \u0111\u0103ng k\u00FD trong k\u1EF3\u003C/p\u003E\u003C/article\u003E\u003Carticle class=\u0022revenue-kpi\u0022\u003E\u003C\n\u2026[truncated]",
+        "durationMs": 44
+      }
+    ],
+    "executions": [
+      {
+        "source": "setup[0]",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "ci"
+        ],
+        "cwd": "D:\\parking-management\\web",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "frontend-lint",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "run",
+          "lint",
+          "--",
+          "--ignore-pattern",
+          ".tsupgrader/**"
+        ],
+        "cwd": "D:\\parking-management\\web",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "frontend-build",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "run",
+          "build"
+        ],
+        "cwd": "D:\\parking-management\\web",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "tests-pass",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "test"
+        ],
+        "cwd": "D:\\parking-management\\web",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "home-page-responds",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "run",
+          "start",
+          "--",
+          "--port",
+          "3101"
+        ],
+        "cwd": "D:\\parking-management\\web",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "admin-revenue-report-route-responds",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "run",
+          "start",
+          "--",
+          "--port",
+          "3101"
+        ],
+        "cwd": "D:\\parking-management\\web",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      }
+    ]
+  }
+}
